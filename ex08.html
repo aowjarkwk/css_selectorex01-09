@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>후손, 직계자손 선택자</title>
+    
+    <!-- 상속관계 : 태그 안에 태그가 들어가는 경우 -->
+    <!-- 후손 : 상속관계에서 아래의 모든 요소 -->
+    <!-- 직계자손 : 상속관계에서 바로 아래의 한 개의 요소만 -->
+    
+    <!-- 아이디가 header인 div밑의 바로 밑 h1만 선택하고싶다. -->
+    <!-- > 문자 -->
+    <style>
+        #header > h1{
+            color:red;
+        }
+
+    </style>
+    <!-- 아이디가 section인 div밑의 모든 h1을 선택하고싶다. -->
+    <!-- 공백문자 -->
+    <style>
+        #section h1{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>헤더태그 1</h1>
+        <div>
+            <h1>헤더태그 2</h1>
+        </div>
+    </div>
+    <div id="section">
+        <h1>헤더태그 1</h1>
+        <div>
+            <h1>헤더태그 2</h1>
+        </div>
+    </div>
+</body>
+</html>

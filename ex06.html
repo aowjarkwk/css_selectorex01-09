@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>id선택자, class선택자와 태그 선택자 연결</title>
+    <style>
+        .select{
+            color:red;
+        }
+        .item{
+            background-color: aqua;
+        }
+        /* 태그선택자+클래스선택자 연결 */
+        li.select{
+            color:blue;
+        }
+        /* 태그선택자+아이디선택자 연결 */
+        li#item2{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="select">헤더 태그 1</h1>
+    <ul>
+        <li class="select">아이템 1</li>
+        <li id="item2">아이템 2</li>
+        <li class="select">아이템 3</li>
+        <!-- 클래스 이름을 여러개 사용가능함. -->
+        <!-- 중간에 공백(space)으로 구분한다. -->
+        <li class="select item">아이템 4</li>
+    </ul>
+</body>
+</html>
